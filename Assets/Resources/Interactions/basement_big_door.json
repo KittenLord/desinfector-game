@@ -1,0 +1,26 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"locked": [
+			{ "$type":"jumpIfPlayerItem", "state":"open", "inventory": "player", "items": [ { "item":"bigKey", "amount":1 } ] },
+			
+			{ "$type":"appendl", "path":"locked1", "delay":50 },
+			{ "$type":"hault" }
+		],
+		
+		"open": [
+			{ "$type":"setState", "state":"none" },
+			{ "$type":"appendl", "path":"open1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"toggle", "enable":false },
+			{ "$type":"flag", "flag":"basementDoor", "value":true },
+			{ "$type":"wait", "delay":8000, "unskippable":true }
+		],
+		
+		"none": [
+		
+		]
+	}
+}

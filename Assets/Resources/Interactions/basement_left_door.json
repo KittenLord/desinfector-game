@@ -1,0 +1,20 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"locked": [
+			{ "$type":"jump", "state":"open", "flags": [ "voodooDone" ] },
+			
+			{ "$type":"appendl", "path":"locked1", "delay":50 },
+			{ "$type":"hault" }
+		],
+		
+		"open": [
+			{ "$type":"appendl", "path":"unlocked1", "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"destroy" },
+		]
+	}
+}

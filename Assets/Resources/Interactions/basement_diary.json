@@ -1,0 +1,40 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"appendl", "path":"inspect1", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"title", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"icon", "name":"stranger" },
+			{ "$type":"appendl", "path":"diary1", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"diary2", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"diary3", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"diary4", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"diary5", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"diary6", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"diary7", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"diary8", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+		]
+	}
+}

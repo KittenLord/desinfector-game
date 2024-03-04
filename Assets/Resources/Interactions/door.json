@@ -1,0 +1,16 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"door" },
+			{ "$type":"setState", "state":"open" }
+		],
+		
+		"open": [
+			{ "$type":"door" },
+			{ "$type":"setState", "state":"start" }
+		]
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"jump", "state":"allow", "flags":[ "tookEquipment" ] },
+			
+			{ "$type":"appendl", "path":"start1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"appendl", "path":"start2", "delay":50 },
+			{ "$type":"hault" },
+		],
+		
+		"allow": [
+			{ "$type":"appendl", "path":"allow1", "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"flag", "flag":"cameraMove", "value":true }
+		],
+	}
+}

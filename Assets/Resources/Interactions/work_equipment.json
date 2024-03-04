@@ -1,0 +1,17 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"inventory", "inventories": [ "equipmentStand" ] },
+			
+			{ "$type":"flagIfEmpty", "flag":"tookEquipment" },
+			{ "$type":"jump", "state":"destroy", "flags": [ "tookEquipment" ] },
+		],
+		
+		"destroy": [
+			{ "$type":"destroy" }
+		]
+	}
+}

@@ -1,0 +1,169 @@
+{
+	"groups": {
+		"responses": [ "rude", "polite" ]
+	},
+	"sections": {
+		"intro_cutscene" :[
+			{ "$type":"flag", "flag":"phone", "value":true },
+		
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"interaction.intro.player1_1", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"appendl", "path":"interaction.intro.player1_2", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"stranger" },
+			{ "$type":"appendl", "path":"interaction.intro.stranger1_1", "nonlocal":true, "delay":60 },
+			{ "$type":"wait", "delay":500 },
+			{ "$type":"appendl", "path":"interaction.intro.stranger1_2", "nonlocal":true, "delay":60 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"interaction.intro.player2_1", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"interaction.intro.player2_2", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"stranger" },
+			{ "$type":"appendl", "path":"interaction.intro.stranger2_1", "nonlocal":true, "delay":50 },
+			{ "$type":"wait", "delay":1000 },
+			{ "$type":"appendl", "path":"interaction.intro.stranger2_2", "nonlocal":true, "delay":60 },
+			{ "$type":"wait", "delay":500 },
+			{ "$type":"appendl", "path":"interaction.intro.stranger2_3", "nonlocal":true, "delay":60 },
+			{ "$type":"wait", "delay":2000 },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"interaction.intro.stranger2_4", "nonlocal":true, "delay":60 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "disable":true },
+			{ "$type":"appendl", "path":"interaction.intro.player3_1", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"interaction.intro.player3_2", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"stranger" },
+			{ "$type":"appendl", "path":"interaction.intro.stranger3_1", "nonlocal":true, "delay":50 },
+			{ "$type":"wait", "delay":2000 },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"interaction.intro.stranger3_2", "nonlocal":true, "delay":50 },
+			{ "$type":"wait", "delay":500 },
+			{ "$type":"appendl", "path":"interaction.intro.stranger3_3", "nonlocal":true, "delay":50 },
+			{ "$type":"wait", "delay":500 },
+			{ "$type":"appendl", "path":"interaction.intro.stranger3_4", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "disable":true },
+			{ "$type":"appendl", "path":"interaction.intro.player4_1", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"appendl", "path":"interaction.intro.player4_2", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"interaction.intro.player4_3", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"appendl", "path":"interaction.intro.player4_4", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"stranger" },
+			{ "$type":"appendl", "path":"interaction.intro.stranger4_1", "nonlocal":true, "delay":60 },
+			{ "$type":"wait", "delay":500 },
+			{ "$type":"appendl", "path":"interaction.intro.stranger4_2", "nonlocal":true, "delay":60 },
+			{ "$type":"wait", "delay":2500 },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"interaction.intro.stranger4_3", "nonlocal":true, "delay":60 },
+			{ "$type":"wait", "delay":2000 },
+			{ "$type":"clear" },
+			{ "$type":"musicVolume", "volume":0 },
+			{ "$type":"appendl", "path":"interaction.intro.stranger4_4", "nonlocal":true, "delay":100, "unskippable":true },
+			{ "$type":"hault" },
+			{ "$type":"musicVolume", "volume":1 },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"interaction.intro.stranger4_5", "nonlocal":true, "delay":60 },
+			{ "$type":"wait", "delay":500 },
+			{ "$type":"appendl", "path":"interaction.intro.stranger4_6", "nonlocal":true, "delay":60 },
+			
+			{ "$type":"options", "options": [ "interaction.intro.option1", "interaction.intro.option2" ], "response":"response" },
+			{ "$type":"state", "group":"responses", "response":"response" },
+		],
+		
+		"rude": [
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"interaction.intro.option1_stranger1_1", "nonlocal":true, "delay":80 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"interaction.intro.option1_player1_1", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"stranger" },
+			{ "$type":"appendl", "path":"interaction.intro.option1_stranger2_1", "nonlocal":true, "delay":500, "unskippable":true },
+			{ "$type":"hault" },
+			
+			{ "$type":"state", "state":"finish" }
+		],
+		
+		"polite": [
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"interaction.intro.option2_stranger1_1", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"state", "state":"finish" }
+		],
+		
+		"finish": [
+			{ "$type":"setState", "state":"default" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"interaction.intro.stranger5_1", "nonlocal":true, "delay":50 },
+			{ "$type":"wait", "delay":500 },
+			{ "$type":"appendl", "path":"interaction.intro.stranger5_2", "nonlocal":true, "delay":50 },
+			{ "$type":"wait", "delay":2000 },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"phone" },
+			{ "$type":"appendl", "path":"interaction.intro.phone1", "nonlocal":true, "delay":20 },
+			{ "$type":"hault" },
+			
+			
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"interaction.intro.player5_1", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"appendl", "path":"interaction.intro.player5_2", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"interaction.intro.player5_3", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+		],
+		
+		"default": [
+			{ "$type":"appendl", "path":"1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"appendl", "path":"2", "delay":50 },
+			{ "$type":"hault" },
+		]
+	}
+}

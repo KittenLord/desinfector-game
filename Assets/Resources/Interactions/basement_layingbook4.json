@@ -1,0 +1,17 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"giveOrJump", "inventory":"player", "items": [ "badBook1" ], "elseState":"noSpace" },
+			{ "$type":"flag", "flag":"readBookTip", "value":true },
+			{ "$type":"destroy" } 
+		],
+		"noSpace": [
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"interaction.misc.noSpace", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+		]
+	}
+}

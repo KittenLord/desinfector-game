@@ -1,0 +1,15 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"appendl", "path":"1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"2", "delay":50 },
+			{ "$type":"hault" },
+		]
+	}
+}

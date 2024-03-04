@@ -1,0 +1,16 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"giveOrJump", "inventory":"player", "items": [ "bigKey" ], "elseState":"noSpace" },
+			{ "$type":"destroy" } 
+		],
+		"noSpace": [
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"interaction.misc.noSpace", "nonlocal":true, "delay":50 },
+			{ "$type":"hault" },
+		]
+	}
+}

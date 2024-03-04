@@ -1,0 +1,10 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"inventory", "inventories": [ "locker" ] },
+		]
+	}
+}

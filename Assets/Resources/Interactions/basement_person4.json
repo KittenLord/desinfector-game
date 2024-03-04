@@ -1,0 +1,16 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"icon", "name":"person4" },
+			{ "$type":"appendl", "path":"1", "delay":50 },
+			{ "$type":"hault" },			
+			{ "$type":"clear" },	
+			{ "$type":"appendl", "path":"2", "delay":50 },
+			{ "$type":"hault" },		
+			{ "$type":"flag", "flag":"person4", "value":true }, 			
+		]
+	}
+}

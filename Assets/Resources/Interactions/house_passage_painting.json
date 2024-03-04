@@ -1,0 +1,81 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"firstInteraction": [
+		
+			{ "$type":"flag", "flag":"firstInspectedPainting", "value":true },
+			{ "$type":"jump", "state":"finish", "flags": [ "killedAllBugs" ] },
+		
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"first1", "delay":100 },
+			{ "$type":"hault" },
+			{ "$type":"appendl", "path":"first2", "delay":60 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			
+			{ "$type":"setState", "state":"unfinished" },
+		],
+		
+		"unfinished": [
+		
+			{ "$type":"jump", "state":"finish", "flags": [ "killedAllBugs" ] },
+			
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"unfinished1", "delay":50 },
+			{ "$type":"hault" },
+			
+		],
+		
+		"finish": [
+			
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"finished1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			
+			{ "$type":"appendl", "path":"finished2", "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"appendl", "path":"finished3", "delay":100 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			
+			{ "$type":"appendl", "path":"finished4", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			
+			
+			
+			{ "$type":"toggle", "enable":false },
+			{ "$type":"inspectPainting" },
+			
+			{ "$type":"wait", "delay":10000, "unskippable":true },
+			{ "$type":"toggle", "enable":true },
+			
+			{ "$type":"flag", "flag":"paintingActivated123", "value":true },
+			
+			
+			
+			{ "$type":"icon", "name":"player" },
+			{ "$type":"appendl", "path":"opened1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"opened2", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"opened3", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			
+			{ "$type":"setState", "state":"opened" }
+		],
+		
+		"opened": [
+			{ "$type":"toggle", "enable":false },
+			{ "$type":"warpBasement", "outOfBasement":false }
+		],
+		
+	}
+}

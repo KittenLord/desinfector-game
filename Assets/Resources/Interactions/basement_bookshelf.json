@@ -1,0 +1,27 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"inventory", "inventories": [ "good", "bad" ] },
+			
+			{ "$type":"jumpIfItems", "inventory":"good", "state":"half", "items": [ { "item":"goodBook1", "amount":1 },{ "item":"goodBook2", "amount":1 },{ "item":"goodBook3", "amount":1 },{ "item":"goodBook4", "amount":1 },{ "item":"goodBook5", "amount":1 },{ "item":"goodBook6", "amount":1 }, ] }
+		],
+		
+		"half": [
+			{ "$type":"jumpIfItems", "inventory":"bad", "state":"add", "items": [ { "item":"badBook1", "amount":1 },{ "item":"badBook2", "amount":1 },{ "item":"badBook3", "amount":1 },{ "item":"badBook4", "amount":1 },{ "item":"badBook5", "amount":1 },{ "item":"badBook6", "amount":1 }, ] }
+		],
+		
+		"add": [
+			{ "$type":"flag", "flag":"bookshelfSecret", "value":true },
+			{ "$type":"appendl", "path":"contraption", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"setState", "state":"finish" }
+		],
+		
+		"finish": [
+			{ "$type":"inventory", "inventories": [ "good", "bad", "key" ] },
+		]
+	}
+}

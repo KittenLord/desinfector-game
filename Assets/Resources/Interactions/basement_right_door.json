@@ -1,0 +1,20 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"locked": [
+			{ "$type":"jumpIfPlayerItem", "state":"open", "inventory": "player", "items": [ { "item":"rightKey", "amount":1 } ] },
+			
+			{ "$type":"appendl", "path":"locked1", "delay":50 },
+			{ "$type":"hault" }
+		],
+		
+		"open": [
+			{ "$type":"appendl", "path":"unlocked1", "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"destroy" },
+		]
+	}
+}

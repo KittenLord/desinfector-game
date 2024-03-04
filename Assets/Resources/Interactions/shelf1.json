@@ -1,0 +1,13 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"append", "text":"This is a regular bookshelf. ", "delay":50 },
+			{ "$type":"wait", "delay":1000 },
+			{ "$type":"append", "text":"Nothing peculiar.", "delay":50 },
+			{ "$type":"hault" }
+		]
+	}
+}

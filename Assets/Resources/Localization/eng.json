@@ -1,0 +1,448 @@
+{
+	"inventory": {
+		"player":"Your inventory",
+		"hand":"Holding",
+		"body":"Wearing",
+		
+		"equipmentStand":"Equipment stand",
+		"locker":"Locker",
+		
+		"good":"First shelf",
+		"bad":"Second shelf",
+		
+		"key":"Secret compartment",
+	},
+	
+	"item": {
+		"toxin_thrower": { "name":"Bug Annihilator 3000" },
+		"candle": { "name":"Candle" },
+		"armor": { "name":"Anti-toxin suit" },
+		
+		"notePart1": { "name":"First piece of paper" },
+		"notePart2": { "name":"Second piece of paper" },
+		"notePart3": { "name":"Third piece of paper" },
+		
+		"goodBook1": { "name":"\"American Psycho\" book" },
+		"goodBook2": { "name":"\"Harry Potter\" book" },
+		"goodBook3": { "name":"\"Don Quixote\" book" },
+		"goodBook4": { "name":"\"Gulliver's Travels\" book" },
+		"goodBook5": { "name":"\"Divine Comedy\" book" },
+		"goodBook6": { "name":"\"Robinson Crusoe\" book" },
+		
+		"badBook1": { "name":"\"1984\" book" },
+		"badBook2": { "name":"\"Moby-Dick\" book" },
+		"badBook3": { "name":"\"Crime and Punishment\" book" },
+		"badBook4": { "name":"\"The Lord of the Rings\" book" },
+		"badBook5": { "name":"\"Odyssey\" book" },
+		"badBook6": { "name":"\"Anna Karenina\" book" },
+		"badBook7": { "name":"\"Animal Farm\" book" },
+		
+		"note": { "name":"A mysterious note" },
+		
+		"rightKey": { "name":"Key for the right hallway" },
+		
+		"bigKey": { "name":"A big key" },
+	},
+	"interaction" : {
+		
+		"intro": {
+			"player1_1":"Hello? ",
+			"player1_2":"Who is this? ",
+			
+			"stranger1_1":"It doesn't matter. ",
+			"stranger1_2":"In fact, I am a customer who urgently needs your service.",
+			
+			"player2_1":"Oh, sorry, sorry, I got confused. ",
+			"player2_2":"What seems to be the problem?",
+			
+			"stranger2_1":"Urgh... ",
+			"stranger2_2":"My mansion is infested with these... ",
+			"stranger2_3":"terrible, terrible creatures. ",
+			"stranger2_4":"They frightened all of our guests, and almost gave my wife a heart attack!",
+			
+			"player3_1":"Dear, oh dear...",
+			"player3_2":"Are there any other details that could come in handy for us?",
+			
+			"stranger3_1":"What other details could you possibly need?! ",
+			"stranger3_2":"Your job is to desinfect houses. ",
+			"stranger3_3":"My house is infested. ",
+			"stranger3_4":"Can you not connect the dots? ",
+			
+			"player4_1":"Urgh... ",
+			"player4_2":"For god's sake...",
+			"player4_3":"Yeah, sorry. ",
+			"player4_4":"I'll arrive as soon as possible. ",
+			
+			"stranger4_1":"Good, good... ",
+			"stranger4_2":"I am not currently at the house, but you will find the door opened... ",
+			"stranger4_3":"Oh, and just one more thing: ",
+			"stranger4_4":"Do not stick your nose anywhere. ",
+			"stranger4_5":"Go in, do your job and leave. Simple as that. ",
+			"stranger4_6":"Am I understood? ",
+			
+			
+			"option1":"And what if I do?",
+			"option2":"Okay...",
+			
+			
+			"option1_stranger1_1":"Do not even dare. ",
+			
+			"option1_player1_1":"Okay-okay, I won't. ",
+			
+			"option1_stranger2_1":". . . ",
+			
+			
+			"option2_stranger1_1":"Good, good... ",
+			
+			
+			"stranger5_1":"I expect my house to be completely clean. ",
+			"stranger5_2":"Call me when you are done. ",
+			
+			"phone1":"*click*",
+			
+			"player5_1":"What a weird guy... ",
+			"player5_2":"But at least I've finally got some work to do. ",
+			"player5_3":"Now I gotta grab my equipment and head to the truck. "
+		},
+		
+		"birthday": {
+			
+			"people1":"Happy Birthday! ",
+			"person1":"Happy Birthday Jeremy! ",
+			
+			"player1":"Oh my god!.. ",
+			"player2":"What?! ",
+			
+			"person2":"Uh, we've decided to throw a surprise party for you! ",
+			"person3":"Though, you might have found the lead-up to it quite... ",
+			"person4":"elaborate. ",
+			
+			"player3":"Good lord, guys... ",
+			"player4":"You're insane! ",
+			"player5":"How did you come up with this?! ",
+			
+			"person5":"We had a funny little idea, but then we thought - why not? ",
+			
+			"player6":"Hahaha... ",
+			"player7":"I am at loss of words... ",
+			
+			"person6":"We got him. ",
+			
+			"people2":"*Laughing*",
+			
+			"person7":"Well, time to celebrate! ",
+			"person8":"Let's go! "
+			
+		},
+		
+		"misc":{
+			"noSpace":"I can't pick this up, I have too much stuff. ",
+			"bookNote":"Reader's notes: ",
+		},
+		
+		"books":{
+			"goodBook1":{
+				"1":"\"I really liked this book. ",
+				"2":"Its main character is literally me.\" "
+			},
+			"goodBook2":{
+				"1":"\"Magic system in here is quite complex and interesting. ",
+				"2":"Overall it's a great book, might read next parts too.\" "
+			},
+			"goodBook3":{
+				"1":"\"An absurd, but also a really fun book. ",
+				"2":"Rocinante is undisputably the best character there.\" "
+			},
+			"goodBook4":{
+				"1":"\"A great book, interesting concept. ",
+				"2":"Also good food for thought.\" "
+			},
+			"goodBook5":{
+				"1":"\"An interesting read, though I still have a question... ",
+				"2":"Is its author the same Dante I'm thinking of?\" "
+			},
+			"goodBook6":{
+				"1":"\"A great adventure book, read it in just a few days. ",
+				"2":"Kinda makes me want to go hiking.\" "
+			},
+			
+			
+			
+			
+			"badBook1":{
+				"1":"\"To be honest, this book is terrible. ",
+				"2":"Main character is so whiny all the time for no reason.\" "
+			},
+			"badBook2":{
+				"1":"\"Author is clearly a sailor nerd, it got boring too quickly. ",
+				"2":"I don't need *that* much whales' descriptions.\" "
+			},
+			"badBook3":{
+				"1":"\"A guy just murdered an elder woman with an axe. ",
+				"2":"How is it supposed to be interesting?\" "
+			},
+			"badBook4":{
+				"1":"\"A lame story about a lot of short people, I guess. ",
+				"2":"Could've been better.\" "
+			},
+			"badBook5":{
+				"1":"\"Really boring, still didn't finish it. ",
+				"2":"Author is too pretentious.\" "
+			},
+			"badBook6":{
+				"1":"\"A really weird book, I don't know how I feel about it. ",
+				"2":"Too boring and stretched out.\" "
+			},
+			"badBook7":{
+				"1":"\"A dumb story, just animals or whatever. ",
+				"2":"How does anyone enjoy this?\" "
+			},
+		},
+		
+		"work_car":{
+			
+			"state_name": { "start":"Get in the van" },
+			
+			"start1":"I can't get in yet. ",
+			"start2":"I need to grab my equipment first. ",
+			
+			"allow1":"Here we go."
+		},
+		
+		"work_phone" : {
+			
+			"state_name": { "intro_cutscene":"Answer the call", "default":"Work phone" },
+			
+			"1":"A really old work phone. ",
+			"2":"Sometimes people call here. "
+		},
+		"work_locker": {
+			
+			
+			"state_name": { "start":"Inspect a locker" },
+			
+			"1":"A closed locker. ",
+			"2":"I don't have time for this.",
+		},
+		"work_chair": {
+			
+			"state_name": { "start":"Inspect a chair" },
+			
+			"1":"A comfy chair."
+		},
+		
+		
+		
+		
+		"house_passage_painting": {
+			
+			"state_name": { "firstInteraction":"Inspect the painting", "unfinished":"Inspect the painting", "opened":"Enter the secret passage" },
+			
+			"first1":"Hmm... ",
+			"first2":"Something is wrong with this painting... ",
+
+			"unfinished1":"I should inspect it later, after I'm done with these bugs. ",
+			
+			"finished1":"Okay, what's the deal with this painting?.. ",
+			"finished2":"It looks so... ",
+			"finished3":"ominous... ",
+			"finished4":"Heh, maybe if I touch it something will happen? ",
+			
+			"opened1":"Oh my god... ",
+			"opened2":"Now I see what that weird guy meant... ",
+			"opened3":"Should I perhaps go in? ",
+		},
+		
+		"house_letter": {
+			
+			"state_name": { "start":"Read letter" },
+			
+			"inspect1":"An unsent letter lays on the table. ",
+			
+			"title":"To Johann: ",
+			
+			"letter1":"Hello, my dear friend. ",
+			"letter2":"Unfortunately I couldn't read all the books you have recommended me, but I did read some. ",
+			"letter3":"Here I will write down my thoughts: ",
+			"letter4":"I really enjoyed \"Robinson Crusoe\" and \"Harry Potter\" - definitely excellent books! ",
+			"letter5":"On the other hand, \"Animal Farm\" really disappointed me. ",
+			"letter6":"In fact, I disliked it so much, that I am thinking of designating a separate shelf for books so terrible. ",
+			"letter7":"What do you think? Good books on one shelf, bad books on another? ",
+			"letter8":"Await for my future letters. Best regards, William. ",
+		},
+		
+		
+		
+		"basement_diary": {
+			
+			"state_name": { "start":"Read diary" },
+			
+			"inspect1":"A small diary lies on the table",
+			
+			"title":"Dear diary, ",
+			
+			"diary1":"I am really frustrated right now. ",
+			"diary2":"A few days ago, I've written a letter to Johann, but apparently I still didn't send it! ",
+			"diary3":"And there is a concrete reason why I forgot to do it: ",
+			"diary4":"Right while I wass writing the letter, the lights turned off. ",
+			"diary5":"Me and my wife started to search for the candles, but there were none. ",
+			"diary6":"After the whole afternoon, it turned out that someone took the candles from the pantry, and brought them to the kitchen! ",
+			"diary7":"We still don't know who did it, but this fiesta made me forget about the letter. ",
+			"diary8":"I really hope Johann isn't mad at me. ",
+		},
+		
+		"basement_right_door" : {
+			
+			"state_name": { "locked":"Open the door", "unlocked":"Open the door" },
+			
+			"locked1": "This door is locked. ",
+			"unlocked1":"This door has been unlocked. "
+		},
+		
+		"basement_left_door" : {
+			
+			"state_name": { "locked":"Open the door", "unlocked":"Open the door" },
+			
+			"locked1": "This door is locked by some contraption. ",
+			"unlocked1":"This door has been unlocked. "
+		},
+		
+		"basement_carve": {
+			
+			"state_name": { "start":"Inspect the table" },
+			
+			"1":"A carving table with some weird symbols etched on it. "
+		},
+		
+		"basement_candle": {
+			"state_name": { "empty":"Candle slot", "inserted":"Touch the candle" },
+			
+			"empty1":"An empty slot for a candle. ",
+			"inserted1":"A candle has been inserted. "
+		},
+		
+		"basement_altar": {
+			"state_name": { "start":"Inspect the altar", "preritual":"Perform a ritual" },
+			
+			"1":"A mysterious altar with five slots for candles. ",
+			"2":"A short text etched on the side of it reads: ",
+			"3":"\"A place to mend the broken. Bring the candles and dance with light to regain what is lost. \"",
+			
+			"noItems1":"An otherwordly voice whispers inside of your head: ",
+			"noItems2":"What is broken can only be repaired with all of its pieces on the hands. ",
+			"noItems3":"Return here when you gather all of them. ",
+			
+			"ritualStart1":"An otherwordly voice whispers inside of your head: ",
+			"ritualStart2":"It is time to begin the ritual. ",
+		},
+		
+		"basement_final_key": { "state_name": { "start":"Pick up the key" } },
+		
+		"basement_layingbook1": { "state_name": { "start":"Pick up the book" } },
+		"basement_layingbook2": { "state_name": { "start":"Pick up the book" } },
+		"basement_layingbook3": { "state_name": { "start":"Pick up the book" } },
+		"basement_layingbook4": { "state_name": { "start":"Pick up the book" } },
+		"basement_layingbook5": { "state_name": { "start":"Pick up the book" } },
+		
+		"basement_notePart1": { "state_name": { "start":"Pick up a piece of paper" } },
+		"basement_notePart2": { "state_name": { "start":"Pick up a piece of paper" } },
+		"basement_notePart3": { "state_name": { "start":"Pick up a piece of paper" } },
+		
+		"basement_out": { "state_name": { "start":"Exit the basement" } },
+		
+		"basement_safe": { "state_name": { "start":"Inspect the safe" } },
+		
+		"door": { "state_name": { "start":"Open the door", "open":"Close the door" } },
+		
+		"house_candleLocker": { "state_name": { "start":"Open the locker" } },
+		
+		"work_equipment": { "state_name": { "start":"Inspect the stand" } },
+		
+		
+		
+		"basement_big_door": {
+			"state_name": { "locked":"Open the door" },
+			
+			"locked1": "A door with a giant keyhole. ",
+			"open1": "A big key turned slowly. "
+		},
+		
+		"basement_bookshelf": {
+			"state_name": { "start":"Inspect the bookshelf", "finish":"Inspect the bookshelf" },
+			
+			"contraption":"A small secret section has opened. "
+		},
+		
+		
+		
+		
+		
+		
+		
+		"basement_person1": {
+			"state_name": { "start":"Talk to Andrew" },
+			"1":"Happy Birthday, my dear friend. ",
+			"2":"Hope this year will be great for you. "
+		},
+		
+		"basement_person2": {
+			"state_name": { "start":"Talk to Butters" },
+			"1":"Uh, you smell like you swam in a bath full of poison. ",
+			"2":"You might want to consult with Walter on this one... "
+		},
+		
+		"basement_person3": {
+			"state_name": { "start":"Talk to Jessica" },
+			"1":"Hey, Happy Birthday once more! ", 
+			"2":"I wish you all the best! "
+		},
+		
+		"basement_person4": {
+			"state_name": { "start":"Talk to Mary" },
+			"1":"We hope you liked this little venture",
+			"2":"Once again, happy birthday! "
+		},
+		
+		"basement_person5": {
+			"state_name": { "start":"Talk to Walter" },
+			"1":"I am breaking bad so hard right now it's unbelievable. ",
+			"2":"Happy Birthday by the way, uh. "
+		},
+		
+		"basement_person6": {
+			"state_name": { "start":"Talk to Gregory" },
+			"1":"Happy Birthday, dude! Oh, and, by the way... ",
+			"2":"I don't really know, whether you will get paid for today's work... But I sure hope you will! "
+		},
+		
+		
+		
+		"house_endGameCar": {
+			"state_name": { "start":"Drive away" },
+			
+			"option_leave":"Leave", 
+			"option_notleave":"Stay",
+			"decisionStay":"Fine, I'll stay. ",
+			
+			"birthdayLeave_1":"Heh, it seems that I am done now. ",
+			
+			"basementLeave_1":"Nah, I'm not gonna bother with allat. ",
+			
+			"paintingLeave_1":"Wait, I forgot about that weird painting. ",
+			"paintingLeave_2":"Maybe I should stay and investigate it? ",
+			
+			"workDoneLeave_1":"Welp, my work here is done. ",
+			"workDoneLeave_2":"If I didn't forget anything, I can leave now. ",
+			
+			"cantLeave_1":"I can't leave now, I still have work to do. ",
+		},
+		
+		"basement_secretDoor": {
+			"state_name": { "start":"Open the door" },
+			
+			"locked":"The door is locked by some force. ",
+			"unlocked1":"The force locking the door went away. ",
+			"unlocked2":"Now there is something else... ",
+		}
+	}
+}

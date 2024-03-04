@@ -1,0 +1,44 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"appendl", "path":"1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"2", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"3", "delay":50 },
+			{ "$type":"hault" },
+		],
+		
+		"preritual": [
+		
+			{ "$type":"jumpIfPlayerItem", "state":"ritual", "inventory": "player", "items": [ { "item":"notePart1", "amount":1 },{ "item":"notePart2", "amount":1 },{ "item":"notePart3", "amount":1 } ] },
+			
+			{ "$type":"appendl", "path":"noItems1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"noItems2", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"noItems3", "delay":50 },
+			{ "$type":"hault" },
+		],
+		
+		"ritual": [
+			{ "$type":"appendl", "path":"ritualStart1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"ritualStart2", "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"altar" },
+			
+			{ "$type":"toggle", "enable":false },
+			{ "$type":"wait", "delay":2000, "unskippable":true } 
+		]
+	}
+}

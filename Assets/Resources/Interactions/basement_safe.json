@@ -1,0 +1,11 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"toggle", "enable":false },
+			{ "$type":"safe" }
+		]
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"empty": [
+			{ "$type":"jumpIfRemove", "state":"insert", "inventory": "player", "item":"candle", "amount":1 },
+			
+			{ "$type":"appendl", "path":"empty1", "delay":50 },
+			{ "$type":"hault" }
+		],
+		
+		"insert": [
+			{ "$type":"candle" },
+			{ "$type":"setState", "state":"inserted" },
+			{ "$type":"appendl", "path":"inserted1", "delay":50 },
+			{ "$type":"hault" },
+		],
+		
+		"inserted": [
+			{ "$type":"candle" }
+		]
+	}
+}

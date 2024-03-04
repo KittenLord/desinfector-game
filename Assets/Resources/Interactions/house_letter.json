@@ -1,0 +1,40 @@
+{
+	"groups": {
+		
+	},
+	"sections": {
+		"start": [
+			{ "$type":"appendl", "path":"inspect1", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"title", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"icon", "name":"stranger" },
+			{ "$type":"appendl", "path":"letter1", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"letter2", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"letter3", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"letter4", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"letter5", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"letter6", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"letter7", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+			{ "$type":"appendl", "path":"letter8", "delay": 50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" }, 
+		]
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"groups": {
+		"responses": [ "leave", "stay" ]
+	},
+	"sections": {
+		"start": [
+			{ "$type":"jump", "state":"birthdayActivated", "flags":[ "birthdayActivated" ] },
+			{ "$type":"jump", "state":"basementDoor", "flags": [ "basementDoor" ] },
+			{ "$type":"jump", "state":"firstInspectedPainting", "flags": [ "firstInspectedPainting" ] },
+			{ "$type":"jump", "state":"killedAllBugs", "flags": [ "killedAllBugs" ] },
+			
+			{ "$type":"appendl", "path":"cantLeave_1", "delay":50 },
+			{ "$type":"hault" },
+		],
+		
+		"birthdayActivated": [
+			{ "$type":"icon", "name":"player" }, 
+			{ "$type":"appendl", "path":"birthdayLeave_1", "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"state", "state":"tryleave" },
+		],
+		
+		"basementDoor": [
+			{ "$type":"icon", "name":"player" }, 
+			{ "$type":"appendl", "path":"basementLeave_1", "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"state", "state":"tryleave" },
+		],
+		
+		"firstInspectedPainting": [
+			{ "$type":"icon", "name":"player" }, 
+			{ "$type":"appendl", "path":"paintingLeave_1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"paintingLeave_2", "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"state", "state":"tryleave" },
+		],
+		
+		"killedAllBugs": [
+			{ "$type":"icon", "name":"player" }, 
+			{ "$type":"appendl", "path":"workDoneLeave_1", "delay":50 },
+			{ "$type":"hault" },
+			{ "$type":"clear" },
+			{ "$type":"appendl", "path":"workDoneLeave_2", "delay":50 },
+			{ "$type":"hault" },
+			
+			{ "$type":"state", "state":"tryleave" },
+		],
+		
+		"tryleave": [
+			{ "$type":"options", "options": [ "interaction.house_endGameCar.option_leave", "interaction.house_endGameCar.option_notleave" ], "response":"response" },
+			{ "$type":"state", "group":"responses", "response":"response" },
+		],
+		
+		"leave": [ { "$type":"flag", "flag":"enableMusic", "value":true }, { "$type":"toggle", "enable":false }, { "$type":"end" } ],
+		"stay": [ { "$type":"clear" }, { "$type":"icon", "name":"player" }, { "$type":"appendl", "path":"decisionStay", "delay":50 }, { "$type":"hault" } ],
+	}
+}
